@@ -18,10 +18,7 @@ function displayResults(responseData) {
   $('#results-list').empty();
   // iterate through the items array
   for (let i = 0; i < responseData.data.length; i++){
-    // for each video object in the items 
-    //array, add a list item to the results 
-    //list with the video title, description,
-    //and thumbnail
+   
     $('#results-list').append(
       `<li><h3>${responseData.data[i].fullName}<span>(${responseData.data[i].states})</span></h3>
       <p>${responseData.data[i].description}</p>
